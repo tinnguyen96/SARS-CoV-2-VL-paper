@@ -1,3 +1,7 @@
+logs/
 *~
 Makefile
 
+fulldt.Rdata
+mix_s_all
+splines_TP+.Rdata
