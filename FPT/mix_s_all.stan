@@ -3,13 +3,13 @@ data {
   vector[N] y;
   int K;
   int start;
-  int Age_idx[N];
+  array[N] int Age_idx;
   vector[K] mu;
 }
 
 transformed data {
-  int count_up[abs(start-K)];
-  int count_down[start-1];
+  array[abs(start-K)] int count_up;
+  array[start-1] int count_down;
   for (k in 1:num_elements(count_down)) count_down[k] = start - k;
   for (k in 1:num_elements(count_up)) count_up[k] = start + k;
 }

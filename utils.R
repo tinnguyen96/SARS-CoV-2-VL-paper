@@ -10,6 +10,7 @@ library(bayesplot)
 library(splines)
 library(parallel)
 library(EnvStats)
+library(R.utils)
 options(mc.cores = 4)
 
 fn_fulldt = here("data/fulldt.Rdata")
